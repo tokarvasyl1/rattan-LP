@@ -1,0 +1,96 @@
+.wrapper {
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.lock {
+  overflow-y: hidden;
+}
+
+header {
+  height: 80px;
+  border: 1px solid red;
+}
+
+main {
+  flex: 1 1 auto;
+  height: 100%;
+  border: 3px solid black;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav_body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+  }
+}
+.nav_body.opened {
+  left: 0;
+  transition: 0.3s all ease 0s;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767.98px) {
+  ul {
+    flex-direction: column;
+  }
+}
+footer {
+  height: 80px;
+  border: 1px solid red;
+}
+
+.button {
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+button {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  button {
+    display: inline-block;
+  }
+}
+button span {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: blue;
+}
+button span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background-color: blue;
+}
+button span:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */
