@@ -22,7 +22,7 @@ header {
 
 main {
   flex: 1 1 auto;
-  height: 140%;
+  height: 300%;
   border: 3px solid black;
 }
 
