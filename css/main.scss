@@ -13,6 +13,11 @@
   }
 }
 
+html{
+  &.lock{
+    overflow-y: hidden;
+  }
+}
 body{
   &.lock{
     overflow-y: hidden;

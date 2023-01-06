@@ -1,7 +1,8 @@
 $(function (){
     $('button').click(function () {
         $('.nav_body').toggleClass('opened')
-        $('body').toggleClass('lock')
+        $('body, html').toggleClass('lock')
+
 
     });
 });
