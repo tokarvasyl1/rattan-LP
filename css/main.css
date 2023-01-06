@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
 }
+.wrapper.lock {
+  overflow-y: hidden;
+}
 
 body.lock {
   overflow-y: hidden;
@@ -15,7 +18,7 @@ header {
 
 main {
   flex: 1 1 auto;
-  height: 100%;
+  height: 140%;
   border: 3px solid black;
 }
 
