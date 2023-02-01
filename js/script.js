@@ -88,7 +88,7 @@ $(document).ready(function () {
         $('.video-widget__container').on("click", function (t) {
             "default" === e.attr('data-state') ? (e.attr("data-state", "opened"), a.currentTime = 0, a.muted = !1) : (e.attr("data-state", "default"), a.muted = !0)
         }),
-    1024 < $(document).width() && $(".video-widget__container").on("clikc", function (t) {
+    1024 < $(document).width() && $(".video-widget__container").on("click", function (t) {
         "default" === e.attr("data-state") ? (e.attr("data-state", "opened"), a.currentTime = 0, a.muted = !1) : (e.attr("data-state", "default"), a.muted = !0)
     })
         $(document).mouseup(function (t) {
