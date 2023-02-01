@@ -90,8 +90,8 @@ $(document).ready(function () {
         }),
     1024 < $(document).width() && $(".video-widget__container").on("touchstart", function (t) {
         "default" === e.attr("data-state") ? (e.attr("data-state", "opened"), a.currentTime = 0, a.muted = !1) : (e.attr("data-state", "default"), a.muted = !0)
-    }),
+    })
         $(document).mouseup(function (t) {
-        e.is(t.target) || 0 !== e.has(t.target).length || "default" == e.attr("data-state") || (e.attr("data-state", "default"), a.muted = !0)
+        e.is(t.target) || 0 !== e.has(t.target).length || "default" === e.attr("data-state") || (e.attr("data-state", "default"), a.muted = !0)
     })
 });
