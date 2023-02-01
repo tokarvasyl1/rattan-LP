@@ -64,17 +64,11 @@ footer {
 }
 
 .video-widget__container {
-  font-family: Helvetica;
   z-index: 999999;
   overflow: hidden;
-  border-style: solid;
-  background: #eee;
   -webkit-transition: width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
-  transition: width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
   -o-transition: width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s, -o-transform 0.2s ease-in-out 0s;
   -moz-transition: transform 0.2s ease-in-out 0s, width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s, -moz-transform 0.2s ease-in-out 0s;
-  transition: transform 0.2s ease-in-out 0s, width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s;
-  transition: transform 0.2s ease-in-out 0s, width 0.3s ease-in-out 0s, height 0.3s ease-in-out 0s, bottom 0.3s ease-in-out 0s, border-color 0.2s ease-in-out 0s, opacity 1s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s, -moz-transform 0.2s ease-in-out 0s, -o-transform 0.2s ease-in-out 0s;
   outline: 0;
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -89,12 +83,11 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
   position: absolute;
   left: 20px;
-  bottom: 50px;
+  bottom: 20px;
   border-radius: 20px;
   border-width: 5px;
-  width: 130px;
-  height: 180px;
-  border-color: #fff;
+  width: 150px;
+  height: 200px;
 }
 
 .video-widget__container:hover {
@@ -103,7 +96,6 @@ footer {
   -ms-transform: scale(1.05) translate(5px, -5px);
   -o-transform: scale(1.05) translate(5px, -5px);
   transform: scale(1.05) translate(5px, -5px);
-  border-color: #131344;
 }
 
 .video-widget__video {
@@ -126,7 +118,6 @@ footer {
   -o-transition: opacity 0.4s ease-in-out 0s;
   -moz-transition: opacity 0.4s ease-in-out 0s;
   transition: opacity 0.4s ease-in-out 0s;
-  opacity: 0.9;
 }
 
 .video-widget__close {
@@ -141,8 +132,6 @@ footer {
   transition: opacity 0.2s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
   -o-transition: opacity 0.2s ease-in-out 0s, -o-transform 0.3s ease-in-out 0s;
   -moz-transition: transform 0.3s ease-in-out 0s, opacity 0.2s ease-in-out 0s, -moz-transform 0.3s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s, opacity 0.2s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s, -moz-transform 0.3s ease-in-out 0s, -o-transform 0.3s ease-in-out 0s;
 }
 
 .video-widget__close:after, .video-widget__close:before {
@@ -178,10 +167,8 @@ footer {
 }
 
 .video-widget.video-widget[data-state=opened] .video-widget__container {
-  width: 280px;
-  height: 500px;
-  border-radius: 20px;
-  border-color: #fff;
+  width: 220px;
+  height: 300px;
 }
 
 .video-widget.video-widget[data-state=opened] .video-widget__close {
@@ -206,10 +193,13 @@ footer {
 
 .video-widget__button {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 20px;
   right: 20px;
   left: 20px;
-  height: 65px;
+  height: 40px;
   border-radius: 10px;
   z-index: 300;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 4px 15px;
@@ -223,12 +213,8 @@ footer {
   transition: transform 0.2s ease-in-out 0s, opacity 0.3s ease-in-out 0s, background-color 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s, -moz-transform 0.2s ease-in-out 0s, -o-transform 0.2s ease-in-out 0s;
   visibility: hidden;
   background-color: #fdd82a;
-  font-size: 14px;
-  font-family: Helvetica;
+  font-size: 12px;
   color: #000;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 65px;
   text-transform: uppercase;
   opacity: 0;
 }
@@ -255,10 +241,6 @@ footer {
     width: 90px;
     height: 125px;
   }
-}
-.video-widget__button {
-  color: #000000 !important;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
